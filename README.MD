@@ -11,17 +11,17 @@
     2. You can get usage instructions on how to run this script by the following 
     command.
 
-        python google_trends_scraper.py --help
+        python google_trends_advanced.py --help
 
         (OR)
         
-        python google_trends_scraper.py -h
+        python google_trends_advanced.py -h
 
     3. Get Google Trends data for keywords present in file `sample_keywords_list.csv` which is in same drectory
     with column name containing keywords as `Company` with output file set as `tech_companies.csv` by the 
     following command.
 
-    python google_trends_scraper.py -o tech_companies.csv -f sample_keywords_list.csv
+    python google_trends_advanced.py -o tech_companies.csv -f sample_keywords_list.csv
 
     4. Check if `tech_companies.csv` with required data is generated.
 
@@ -36,9 +36,9 @@
     for example, `sample_keywords_list.csv` present in SAME directory, use the 
     following command to generate a default csv file named `Google Trends Results.csv`.
 
-            python google_trends_scraper.py -f sample_keywords_list.csv
+            python google_trends_advanced.py -f sample_keywords_list.csv
             (OR)
-            python google_trends_scraper.py --infile sample_keywords_list.csv
+            python google_trends_advanced.py --infile sample_keywords_list.csv
     
     ------------------------------------------------------------------------------
     (ii)  To get the Google Trends data for keywords present in a CSV file, 
@@ -46,18 +46,18 @@
     in a custom file named, for example, `custom_results.csv`, 
     use the following command to generate it.
 
-            python google_trends_scraper.py -o custom_results.csv -f sample_keywords_list.csv
+            python google_trends_advanced.py -o custom_results.csv -f sample_keywords_list.csv
             (OR)
-            python google_trends_scraper.py --outfile custom_results.csv -f sample_keywords_list.csv
+            python google_trends_advanced.py --outfile custom_results.csv -f sample_keywords_list.csv
     ------------------------------------------------------------------------------
     (iii)  To get the Google Trends data for keywords present in a CSV file, 
     for example, `sample_keywords_list.csv` present in SOME OTHER directory, and save it 
     in a custom file named, for example, `custom_results.csv`, 
     use the following command to generate it.
 
-            python google_trends_scraper.py -o custom_results.csv -f /path/to/sample_keywords_list.csv
+            python google_trends_advanced.py -o custom_results.csv -f /path/to/sample_keywords_list.csv
             (OR)
-            python google_trends_scraper.py --outfile custom_results.csv -f /path/to/sample_keywords_list.csv
+            python google_trends_advanced.py --outfile custom_results.csv -f /path/to/sample_keywords_list.csv
     ------------------------------------------------------------------------------
     (iv)  To get the Google Trends data for keywords present in a CSV file, 
     for example, `sample_keywords_list.csv` present in SAME directory, but the column 
@@ -65,15 +65,15 @@
      `SOME_OTHER_COLUMN`,  and save it in a custom file named, for example, `custom_results.csv`,
     use the following command to generate it.
 
-            python google_trends_scraper.py -o custom_results.csv -f sample_keywords_list.csv -fh SOME_OTHER_COLUMN
+            python google_trends_advanced.py -o custom_results.csv -f sample_keywords_list.csv -fh SOME_OTHER_COLUMN
     ------------------------------------------------------------------------------
     (v) To get the Google Trends data for the keyword `Apple`, use the
         following command to generate a csv file named 
         `Apple - Google Trends.csv` that contains its Google Trends data.
 
-            python google_trends_scraper.py -kw Apple
+            python google_trends_advanced.py -kw Apple
             (OR)
-            python google_trends_scraper.py --keywords Apple
+            python google_trends_advanced.py --keywords Apple
     
     ------------------------------------------------------------------------------
     
@@ -81,7 +81,7 @@
          use the following command to generate a csv file named 
          `Maple Syrup - Google Trends.csv` that contains its Google Trends data.
 
-            python google_trends_scraper.py -kw "Maple Syrup"
+            python google_trends_advanced.py -kw "Maple Syrup"
 
     ------------------------------------------------------------------------------
 
@@ -91,7 +91,7 @@
           `Apple Watch & Amazon Web Services & Microsoft Office & Google - Google Trends.csv`
           that contains its Google Trends data.
         
-            python google_trends_scraper.py -kw "Apple Watch" "Amazon Web Services" "Microsoft Office" Google
+            python google_trends_advanced.py -kw "Apple Watch" "Amazon Web Services" "Microsoft Office" Google
 
     ------------------------------------------------------------------------------
     
@@ -99,9 +99,9 @@
          file, use the `--outfile` or `-o` argument to generate 
          `tech_companies.csv` containing required Google Trends data.
 
-            python google_trends_scraper.py -o tech_companies -kw Apple Amazon Microsoft Google
+            python google_trends_advanced.py -o tech_companies -kw Apple Amazon Microsoft Google
             (OR)
-            python google_trends_scraper.py --outfile tech_companies -kw Apple Amazon Microsoft Google
+            python google_trends_advanced.py --outfile tech_companies -kw Apple Amazon Microsoft Google
 
 
 
